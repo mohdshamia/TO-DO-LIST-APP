@@ -1,9 +1,7 @@
-import  { Component } from 'react';
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
 
-class App extends Component {
+function App () {
 
-  render() {
     return (
       <main>
         <div className="container">
@@ -14,7 +12,7 @@ class App extends Component {
         
       </main>
     );
-  }
+
 }
 
 export default App
