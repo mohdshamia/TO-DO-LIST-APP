@@ -29,7 +29,7 @@ function HomeScreen() {
   }, []);
 
   return (
-    <div className="inner-container">
+    <div className="inner-container"> 
       <h1 className="page-title">To Do List App</h1>
 
       <section className="input-section">
@@ -53,7 +53,6 @@ function HomeScreen() {
               const newArr = [
                 {
                   title: value,
-                  /*import { v4 as uuidv4 } from 'uuid'; */
                   id: uuidv4(),
                 },
                 ...list,
@@ -76,11 +75,11 @@ function HomeScreen() {
               task={item.title}
               key={item.id}
               handleDelete={() => {
-                const filterdItems = list.filter(
-                  (filterItem) => filterItem.id != item.id // true => return the item
+                const filteredItems = list.filter(
+                  (filterItem) => filterItem.id !== item.id // true => return the item
                 );
                 
-                setList(filterdItems)
+                setList(filteredItems)
               }}
             />
           ))
