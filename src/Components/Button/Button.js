@@ -1,15 +1,16 @@
-import "./Styles.css";
+import "./Styles";
+import {StyledButton} from "./Styles";
 
 // function Button (props){
 
-function Button({ isPurble, handleClick, text }) {
+function Button({ isPurple, handleClick, text }) {
   return (
-    <button
-      className={isPurble ? "btn backgrounded-button" : "btn"}
+    <StyledButton
+        isPurple={isPurple}
       onClick={handleClick}
     >
       {text}
-    </button>
+    </StyledButton>
   );
 }
 
